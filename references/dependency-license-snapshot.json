@@ -1,0 +1,345 @@
+{
+  "scope": "Installed dependency metadata and license/notice texts only; dependency implementations, wheels and binaries are not bundled. Not a legal clearance.",
+  "dependencies": [
+    {
+      "name": "beancount",
+      "version": "3.2.3",
+      "license_expression": null,
+      "license_metadata": "GPL-2.0-only",
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [],
+      "source_urls": [
+        "homepage, https://beancount.github.io/",
+        "documentation, https://beancount.github.io/docs/",
+        "repository, https://github.com/beancount/beancount",
+        "donations, https://www.paypal.com/paypalme/misislavski"
+      ],
+      "included_license_notices": [
+        "LICENSE.txt"
+      ],
+      "license_text_source": "https://raw.githubusercontent.com/beancount/beancount/3.2.3/COPYING"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "license_expression": "MIT-0",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "cffi-2.1.1.dist-info/licenses/LICENSE"
+      ],
+      "source_urls": [
+        "Documentation, https://cffi.readthedocs.io/",
+        "Changelog, https://cffi.readthedocs.io/en/latest/whatsnew.html",
+        "Download, https://github.com/python-cffi/cffi/releases",
+        "Contact, https://groups.google.com/forum/#!forum/python-cffi",
+        "Source Code, https://github.com/python-cffi/cffi",
+        "Issue Tracker, https://github.com/python-cffi/cffi/issues"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/cffi-2.1.1-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "charset_normalizer-3.5.2.dist-info/licenses/LICENSE"
+      ],
+      "source_urls": [
+        "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+        "Documentation, https://charset-normalizer.readthedocs.io/",
+        "Code, https://github.com/jawah/charset_normalizer",
+        "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/charset-normalizer-3.5.2-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "click-8.5.0.dist-info/licenses/LICENSE.txt"
+      ],
+      "source_urls": [
+        "Changes, https://click.palletsprojects.com/page/changes/",
+        "Chat, https://discord.gg/pallets",
+        "Documentation, https://click.palletsprojects.com/",
+        "Donate, https://palletsprojects.com/donate",
+        "Source, https://github.com/pallets/click/"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/click-8.5.0-01-LICENSE.txt.txt"
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "license_expression": "Apache-2.0 OR BSD-3-Clause",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "cryptography-50.0.2.dist-info/licenses/LICENSE",
+        "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+        "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD"
+      ],
+      "source_urls": [
+        "changelog, https://cryptography.io/en/latest/changelog/",
+        "documentation, https://cryptography.io/",
+        "homepage, https://github.com/pyca/cryptography",
+        "issues, https://github.com/pyca/cryptography/issues",
+        "source, https://github.com/pyca/cryptography/"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/cryptography-50.0.2-01-LICENSE.txt",
+        "references/third-party-notices/cryptography-50.0.2-02-LICENSE.APACHE.txt",
+        "references/third-party-notices/cryptography-50.0.2-03-LICENSE.BSD.txt"
+      ]
+    },
+    {
+      "name": "et_xmlfile",
+      "version": "2.0.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "license_file_paths_within_distribution": [
+        "et_xmlfile-2.0.0.dist-info/LICENCE.python",
+        "et_xmlfile-2.0.0.dist-info/LICENCE.rst"
+      ],
+      "source_urls": [
+        "Documentation, https://openpyxl.pages.heptapod.net/et_xmlfile/",
+        "Source, https://foss.heptapod.net/openpyxl/et_xmlfile",
+        "Tracker, https://foss.heptapod.net/openpyxl/et_xmfile/-/issues"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/et_xmlfile-2.0.0-01-LICENCE.python.txt",
+        "references/third-party-notices/et_xmlfile-2.0.0-02-LICENCE.rst.txt"
+      ]
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "license_file_paths_within_distribution": [
+        "openpyxl-3.1.5.dist-info/LICENCE.rst"
+      ],
+      "source_urls": [
+        "Documentation, https://openpyxl.readthedocs.io/en/stable/",
+        "Source, https://foss.heptapod.net/openpyxl/openpyxl",
+        "Tracker, https://foss.heptapod.net/openpyxl/openpyxl/-/issues"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/openpyxl-3.1.5-01-LICENCE.rst.txt"
+      ]
+    },
+    {
+      "name": "pdfminer.six",
+      "version": "20260107",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "pdfminer_six-20260107.dist-info/licenses/LICENSE"
+      ],
+      "source_urls": [
+        "Homepage, https://github.com/pdfminer/pdfminer.six"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/pdfminer.six-20260107-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pdfplumber",
+      "version": "0.11.10",
+      "license_expression": null,
+      "license_metadata": null,
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "license_file_paths_within_distribution": [
+        "pdfplumber-0.11.10.dist-info/licenses/LICENSE.txt"
+      ],
+      "source_urls": [],
+      "included_license_notices": [
+        "references/third-party-notices/pdfplumber-0.11.10-01-LICENSE.txt.txt"
+      ]
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0",
+      "license_expression": "MIT-CMU",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "pillow-13.0.0.dist-info/licenses/LICENSE"
+      ],
+      "source_urls": [
+        "Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html",
+        "Changelog, https://github.com/python-pillow/Pillow/releases",
+        "Documentation, https://pillow.readthedocs.io",
+        "Funding, https://tidelift.com/lifter/search/pypi/pillow",
+        "Homepage, https://python-pillow.org",
+        "Mastodon, https://fosstodon.org/@pillow",
+        "Security, https://pillow.readthedocs.io/en/stable/handbook/security.html",
+        "Source, https://github.com/python-pillow/Pillow"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/pillow-13.0.0-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.12",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "pycparser-3.12.dist-info/licenses/LICENSE"
+      ],
+      "source_urls": [
+        "Homepage, https://github.com/eliben/pycparser"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/pycparser-3.12-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pypdfium2",
+      "version": "5.14.0",
+      "license_expression": null,
+      "license_metadata": "BSD-3-Clause, Apache-2.0, dependency licenses",
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "pypdfium2-5.14.0.dist-info/licenses/LICENSES/Apache-2.0.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/LICENSES/BSD-3-Clause.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/LICENSES/CC-BY-4.0.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/abseil.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/agg23.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/fast_float.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/freetype.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/icu.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/lcms.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libjpeg_turbo.ijg",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libjpeg_turbo.md",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libopenjpeg.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libpng.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/llvm-libc.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/pdfium-binaries.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/pdfium.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/simdutf.txt",
+        "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/zlib.txt"
+      ],
+      "source_urls": [
+        "Source, https://github.com/pypdfium2-team/pypdfium2",
+        "Tracker, https://github.com/pypdfium2-team/pypdfium2/issues",
+        "Documentation, https://pypdfium2.readthedocs.io",
+        "Changelog, https://pypdfium2.readthedocs.io/en/stable/changelog.html"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/pypdfium2-5.14.0-01-Apache-2.0.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-02-BSD-3-Clause.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-03-CC-BY-4.0.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-04-abseil.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-05-agg23.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-06-fast_float.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-07-freetype.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-08-icu.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-09-lcms.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-10-libjpeg_turbo.ijg.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-11-libjpeg_turbo.md.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-12-libopenjpeg.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-13-libpng.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-14-llvm-libc.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-15-pdfium-binaries.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-16-pdfium.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-17-simdutf.txt.txt",
+        "references/third-party-notices/pypdfium2-5.14.0-18-zlib.txt.txt"
+      ]
+    },
+    {
+      "name": "python-dateutil",
+      "version": "3.0.0",
+      "license_expression": null,
+      "license_metadata": "Dual License",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License",
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "license_file_paths_within_distribution": [
+        "python_dateutil-3.0.0.dist-info/licenses/LICENSE"
+      ],
+      "source_urls": [
+        "Documentation, https://dateutil.readthedocs.io/en/stable/",
+        "Source, https://github.com/dateutil/dateutil"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/python-dateutil-3.0.0-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29",
+      "license_expression": "Apache-2.0 AND CNRI-Python",
+      "license_metadata": null,
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "regex-2026.9.29.dist-info/licenses/LICENSE.txt"
+      ],
+      "source_urls": [
+        "Homepage, https://github.com/mrabarnett/mrab-regex"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/regex-2026.9.29-01-LICENSE.txt.txt"
+      ]
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "license_file_paths_within_distribution": [
+        "six-1.17.0.dist-info/LICENSE"
+      ],
+      "source_urls": [],
+      "included_license_notices": [
+        "references/third-party-notices/six-1.17.0-01-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "license_expression": null,
+      "license_metadata": "Apache-2.0",
+      "license_classifiers": [],
+      "license_file_paths_within_distribution": [
+        "tzdata-2026.5.dist-info/licenses/LICENSE",
+        "tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE"
+      ],
+      "source_urls": [
+        "Bug Reports, https://github.com/python/tzdata/issues",
+        "Source, https://github.com/python/tzdata",
+        "Documentation, https://tzdata.python.org"
+      ],
+      "included_license_notices": [
+        "references/third-party-notices/tzdata-2026.5-01-LICENSE.txt",
+        "references/third-party-notices/tzdata-2026.5-02-LICENSE_APACHE.txt"
+      ]
+    }
+  ]
+}

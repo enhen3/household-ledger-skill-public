@@ -1,0 +1,371 @@
+{
+  "scope": "License/notice texts copied from the tested environment. One FreeType notice transcodes Latin-1 copyright symbol to UTF-8 without wording changes; both hashes recorded. Original paths are distribution-relative. File names gain .txt for RED Skill compatibility. Implementations are not bundled.",
+  "copied_files": 36,
+  "files": [
+    {
+      "dependency": "cffi",
+      "version": "2.1.1",
+      "original_distribution_path": "cffi-2.1.1.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/cffi-2.1.1-01-LICENSE.txt",
+      "bytes": 1123,
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63",
+      "original_sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "charset-normalizer",
+      "version": "3.5.2",
+      "original_distribution_path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/charset-normalizer-3.5.2-01-LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887",
+      "original_sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "click",
+      "version": "8.5.0",
+      "original_distribution_path": "click-8.5.0.dist-info/licenses/LICENSE.txt",
+      "included_file": "references/third-party-notices/click-8.5.0-01-LICENSE.txt.txt",
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+      "original_sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "original_distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/cryptography-50.0.2-01-LICENSE.txt",
+      "bytes": 197,
+      "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb",
+      "original_sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "original_distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+      "included_file": "references/third-party-notices/cryptography-50.0.2-02-LICENSE.APACHE.txt",
+      "bytes": 11360,
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+      "original_sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "original_distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+      "included_file": "references/third-party-notices/cryptography-50.0.2-03-LICENSE.BSD.txt",
+      "bytes": 1532,
+      "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+      "original_sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "et_xmlfile",
+      "version": "2.0.0",
+      "original_distribution_path": "et_xmlfile-2.0.0.dist-info/LICENCE.python",
+      "included_file": "references/third-party-notices/et_xmlfile-2.0.0-01-LICENCE.python.txt",
+      "bytes": 14688,
+      "sha256": "4ccdaaebc0f44b83720ec0399bb7ab329adce067dd62f73c5535a2dc05628ab2",
+      "original_sha256": "4ccdaaebc0f44b83720ec0399bb7ab329adce067dd62f73c5535a2dc05628ab2",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "et_xmlfile",
+      "version": "2.0.0",
+      "original_distribution_path": "et_xmlfile-2.0.0.dist-info/LICENCE.rst",
+      "included_file": "references/third-party-notices/et_xmlfile-2.0.0-02-LICENCE.rst.txt",
+      "bytes": 1131,
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "original_sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "openpyxl",
+      "version": "3.1.5",
+      "original_distribution_path": "openpyxl-3.1.5.dist-info/LICENCE.rst",
+      "included_file": "references/third-party-notices/openpyxl-3.1.5-01-LICENCE.rst.txt",
+      "bytes": 1131,
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "original_sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pdfminer.six",
+      "version": "20260107",
+      "original_distribution_path": "pdfminer_six-20260107.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/pdfminer.six-20260107-01-LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "f01e5d699a33766b5caf4a5099f2856aba4f3f75ea1df05dc0572b34b4bea8f2",
+      "original_sha256": "f01e5d699a33766b5caf4a5099f2856aba4f3f75ea1df05dc0572b34b4bea8f2",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pdfplumber",
+      "version": "0.11.10",
+      "original_distribution_path": "pdfplumber-0.11.10.dist-info/licenses/LICENSE.txt",
+      "included_file": "references/third-party-notices/pdfplumber-0.11.10-01-LICENSE.txt.txt",
+      "bytes": 1086,
+      "sha256": "0d48994da4d1321e395b5e64a724ed4dec63fb96b88ac5b88fc014771e690821",
+      "original_sha256": "0d48994da4d1321e395b5e64a724ed4dec63fb96b88ac5b88fc014771e690821",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pillow",
+      "version": "13.0.0",
+      "original_distribution_path": "pillow-13.0.0.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/pillow-13.0.0-01-LICENSE.txt",
+      "bytes": 70307,
+      "sha256": "dda12a98c1979cf3d94df1cff45d27a4cb3f04a60c76f76902ac54cac03ec0ce",
+      "original_sha256": "dda12a98c1979cf3d94df1cff45d27a4cb3f04a60c76f76902ac54cac03ec0ce",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pycparser",
+      "version": "3.12",
+      "original_distribution_path": "pycparser-3.12.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/pycparser-3.12-01-LICENSE.txt",
+      "bytes": 1543,
+      "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90",
+      "original_sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/LICENSES/Apache-2.0.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-01-Apache-2.0.txt.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "original_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/LICENSES/BSD-3-Clause.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-02-BSD-3-Clause.txt.txt",
+      "bytes": 1459,
+      "sha256": "a6d11f0694c0137e9b02924b9d33a159f6c72f220fa4655bb2e1ea3654377d39",
+      "original_sha256": "a6d11f0694c0137e9b02924b9d33a159f6c72f220fa4655bb2e1ea3654377d39",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/LICENSES/CC-BY-4.0.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-03-CC-BY-4.0.txt.txt",
+      "bytes": 14527,
+      "sha256": "419896aea50c15d6e40c5b4baf4bd346f78223b9a354c7357ad00262afdc08ec",
+      "original_sha256": "419896aea50c15d6e40c5b4baf4bd346f78223b9a354c7357ad00262afdc08ec",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/abseil.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-04-abseil.txt.txt",
+      "bytes": 11361,
+      "sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747",
+      "original_sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/agg23.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-05-agg23.txt.txt",
+      "bytes": 725,
+      "sha256": "c110d3ea2ad77467ce0dcff7d3337e6c8be8049a5103f4b9bd5fd911a77972e5",
+      "original_sha256": "c110d3ea2ad77467ce0dcff7d3337e6c8be8049a5103f4b9bd5fd911a77972e5",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/fast_float.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-06-fast_float.txt.txt",
+      "bytes": 1079,
+      "sha256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6",
+      "original_sha256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/freetype.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-07-freetype.txt.txt",
+      "bytes": 6742,
+      "sha256": "4a9a548027a2c1d37788519dea833294c9c81f1ebc280e817f41f50d0c642d78",
+      "original_sha256": "f4b133e25df1f86ad3ffea453aa0e613f0474f34778dbbb3e437e7b2724937d8",
+      "encoding": "ISO-8859-1 to UTF-8; copyright symbol preserved, wording unchanged"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/icu.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-08-icu.txt.txt",
+      "bytes": 27718,
+      "sha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af",
+      "original_sha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/lcms.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-09-lcms.txt.txt",
+      "bytes": 1353,
+      "sha256": "7312b68c5b25e9bf2b828706fb4e29588f22705112f411fd42e1f7d84c3d139a",
+      "original_sha256": "7312b68c5b25e9bf2b828706fb4e29588f22705112f411fd42e1f7d84c3d139a",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libjpeg_turbo.ijg",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-10-libjpeg_turbo.ijg.txt",
+      "bytes": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6",
+      "original_sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libjpeg_turbo.md",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-11-libjpeg_turbo.md.txt",
+      "bytes": 5620,
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "original_sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libopenjpeg.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-12-libopenjpeg.txt.txt",
+      "bytes": 1794,
+      "sha256": "c5ab0890a737c2dfa7ba675036554f6d17741d98629b0c2a145354d00617e6b2",
+      "original_sha256": "c5ab0890a737c2dfa7ba675036554f6d17741d98629b0c2a145354d00617e6b2",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libpng.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-13-libpng.txt.txt",
+      "bytes": 5345,
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "original_sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/llvm-libc.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-14-llvm-libc.txt.txt",
+      "bytes": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+      "original_sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/pdfium-binaries.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-15-pdfium-binaries.txt.txt",
+      "bytes": 1177,
+      "sha256": "ba26c1263131696b86c10496b5066b918a20b7161822a80c274d0080105f6c93",
+      "original_sha256": "ba26c1263131696b86c10496b5066b918a20b7161822a80c274d0080105f6c93",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/pdfium.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-16-pdfium.txt.txt",
+      "bytes": 12896,
+      "sha256": "1fe9dea718fbd75cf149adaf4d8a22a4335604d964ddb76d1b45383dec8668c9",
+      "original_sha256": "1fe9dea718fbd75cf149adaf4d8a22a4335604d964ddb76d1b45383dec8668c9",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/simdutf.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-17-simdutf.txt.txt",
+      "bytes": 1059,
+      "sha256": "fc8dbc04e03ad4efc08a647ffe7f995b811a95bc04c0e85a56d5277c6593fa5f",
+      "original_sha256": "fc8dbc04e03ad4efc08a647ffe7f995b811a95bc04c0e85a56d5277c6593fa5f",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "pypdfium2",
+      "version": "5.14.0",
+      "original_distribution_path": "pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/zlib.txt",
+      "included_file": "references/third-party-notices/pypdfium2-5.14.0-18-zlib.txt.txt",
+      "bytes": 1332,
+      "sha256": "33fd641c9f3b0e0be64bc78fea9e94807674cdd70c48477599226cb8956565fe",
+      "original_sha256": "33fd641c9f3b0e0be64bc78fea9e94807674cdd70c48477599226cb8956565fe",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "python-dateutil",
+      "version": "3.0.0",
+      "original_distribution_path": "python_dateutil-3.0.0.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/python-dateutil-3.0.0-01-LICENSE.txt",
+      "bytes": 2889,
+      "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "original_sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "regex",
+      "version": "2026.9.29",
+      "original_distribution_path": "regex-2026.9.29.dist-info/licenses/LICENSE.txt",
+      "included_file": "references/third-party-notices/regex-2026.9.29-01-LICENSE.txt.txt",
+      "bytes": 11584,
+      "sha256": "bff55ef4cdcc8c14ce259f8e8ab60e264418440d6335f4dc138273fbd506144d",
+      "original_sha256": "bff55ef4cdcc8c14ce259f8e8ab60e264418440d6335f4dc138273fbd506144d",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "six",
+      "version": "1.17.0",
+      "original_distribution_path": "six-1.17.0.dist-info/LICENSE",
+      "included_file": "references/third-party-notices/six-1.17.0-01-LICENSE.txt",
+      "bytes": 1066,
+      "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+      "original_sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "tzdata",
+      "version": "2026.5",
+      "original_distribution_path": "tzdata-2026.5.dist-info/licenses/LICENSE",
+      "included_file": "references/third-party-notices/tzdata-2026.5-01-LICENSE.txt",
+      "bytes": 625,
+      "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+      "original_sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+      "encoding": "UTF-8"
+    },
+    {
+      "dependency": "tzdata",
+      "version": "2026.5",
+      "original_distribution_path": "tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE",
+      "included_file": "references/third-party-notices/tzdata-2026.5-02-LICENSE_APACHE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "encoding": "UTF-8"
+    }
+  ],
+  "beancount_gpl_text": {
+    "included_file": "LICENSE.txt",
+    "source_url": "https://raw.githubusercontent.com/beancount/beancount/3.2.3/COPYING",
+    "sha256": "aeb6c47206ea227aad935eb9ff38a8c518e9a96668b2c9ce685b6c4c80bdc853"
+  }
+}

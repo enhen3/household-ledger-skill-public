@@ -1,0 +1,25 @@
+Household Ledger Skill
+Copyright (C) 2026 Soren (project author)
+
+SPDX-License-Identifier: GPL-2.0-only
+
+The project's own source code, tests, examples and documentation in this
+distribution are licensed under the GNU General Public License, version 2
+only. A verbatim copy is provided in LICENSE.txt. This grant does not
+replace the licenses of third-party dependencies or the third-party
+copyright/license notices retained under references/third-party-notices/.
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of version 2 of the GNU General Public License as
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See LICENSE.txt.
+
+This notice applies to candidate 0.3.0-preview.20261028.4. Earlier candidate
+0.2.0-preview.20261027.1 is retained as historical material under its
+separate license text and must not be confused with this GPL version.
+
+Official public download location: not yet published.
+作者：Soren。自有内容采用 GPL-2.0-only，第三方权利声明不变。

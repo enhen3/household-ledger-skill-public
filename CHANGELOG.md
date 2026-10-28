@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0-preview.20261028.5 (public download notice correction)
+
+- Replace the obsolete unpublished-download sentence in COPYRIGHT.txt with the official public repository URL.
+- Align current version metadata and clarify that the former private-maintenance note is historical; license terms, third-party notices, dependencies and functionality are unchanged.
+
 ## 0.3.0-preview.20261028.4 (public source snapshot)
 
 - Establish an independent public source repository with project author Soren and no internal Git history.
@@ -50,7 +55,7 @@
 - Add self-consistent manifests, core-integrity and format checks, reproducible repacking tests, and beginner installation/upgrade guidance.
 - Add user-confirmed custom Chinese LICENSE.txt; dependency-license compatibility and final release approval remain pending. Do not distribute, publish or push.
 
-## Unreleased
+## Historical internal-maintenance note (before public distribution)
 
 - Document shared GitHub maintenance, receiver-side production acceptance, and the goal of future free sharing while keeping the repository private.
 

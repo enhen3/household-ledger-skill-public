@@ -1,6 +1,6 @@
 # GPL 候选版本与两种构建
 
-候选版本 **0.3.0-preview.20261028.4**。作者 Soren；自有内容采用 GPL-2.0-only，见 [COPYRIGHT.txt](../COPYRIGHT.txt) 和完整 [LICENSE.txt](../LICENSE.txt)。账务算法沿用已验收实现；本版仅更新领取、费用、隐私、纯源码许可范围说明及用户署名，保留已验证Fava展示、依赖与账务算法。
+候选版本 **0.3.0-preview.20261028.5**。作者 Soren；自有内容采用 GPL-2.0-only，见 [COPYRIGHT.txt](../COPYRIGHT.txt) 和完整 [LICENSE.txt](../LICENSE.txt)。账务算法沿用已验收实现；本补丁仅修正版权文件的公开领取状态，并同步版本标识；保留已验证Fava展示、依赖、账务算法与许可条款。
 
 ## 状态与官方入口
 

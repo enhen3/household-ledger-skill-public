@@ -1,6 +1,6 @@
 # 公开预览版交接
 
-- 版本 **0.3.0-preview.20261028.4**；作者 Soren；自有内容 GPL-2.0-only，第三方通知保留。
+- 版本 **0.3.0-preview.20261028.5**；作者 Soren；自有内容 GPL-2.0-only，第三方通知保留。
 - 官方源码与后续领取来源：https://github.com/enhen3/household-ledger-skill-public。Code → Download ZIP；解压后将整个目录改名为household-ledger-skill，按README安装。
 - 公开仓库为独立新历史，不是内部仓库的fork，不含内部Git对象或私密备份。不要将旧维护仓库的历史merge/push到这里。
 - 本版只整理公开领取/费用/隐私说明和分发元数据；账务算法、依赖、Fava界面与真人确认停点保持不变。

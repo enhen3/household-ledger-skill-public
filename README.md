@@ -4,7 +4,7 @@
 
 作者 **Soren**。自有内容采用 **GPL-2.0-only**，见 [版权与许可范围](COPYRIGHT.txt) 和完整 [LICENSE.txt](LICENSE.txt)。允许遵守GPL的使用、修改、再分发及商用/转售，不附加旧版的禁售或收费服务限制。第三方依赖保留各自许可证。
 
-当前源码版本 **0.3.0-preview.20261028.4**。免费领取：本仓库 **Code → Download ZIP**。请先跑合成样例，再决定如何接入真实账单。历史候选包保留，源码ZIP与自定义打包ZIP的目录结构和哈希不同，不能混用校验值。依赖及源码义务见 [第三方许可核查](references/third-party-licenses.md)。
+当前源码版本 **0.3.0-preview.20261028.5**。免费领取：本仓库 **Code → Download ZIP**。请先跑合成样例，再决定如何接入真实账单。历史候选包保留，源码ZIP与自定义打包ZIP的目录结构和哈希不同，不能混用校验值。依赖及源码义务见 [第三方许可核查](references/third-party-licenses.md)。
 
 ## 新增默认图形展示与录制样例
 

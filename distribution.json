@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "candidate_version": "0.3.0-preview.20261028.4",
+  "candidate_version": "0.3.0-preview.20261028.5",
   "core_source_commit": null,
   "build_kind": "github-full",
   "status": "public-source-preview",
@@ -35,7 +35,7 @@
   "license_file": "LICENSE.txt",
   "license_name": "GNU General Public License version 2 only",
   "license_compatibility_status": "source-only distribution scope reviewed; upstream combined/binary redistribution compatibility unresolved; not legal clearance",
-  "predecessor_version": "0.3.0-preview.20261028.3",
+  "predecessor_version": "0.3.0-preview.20261028.4",
   "license_spdx": "GPL-2.0-only",
   "author": "Soren",
   "public_download_url": "https://github.com/enhen3/household-ledger-skill-public",
@@ -66,9 +66,8 @@
     "tests/test_workflow.py": "5365bbdc465420972f22cc5a42171e438d9cf279aeea524f567be87392ecb7e5"
   },
   "nonledger_metadata_changes": [
-    "independent public source snapshot without private Git history",
-    "public download and privacy/cost documentation",
-    "distribution metadata reflects the target repository visibility; accounting behavior unchanged"
+    "correct the obsolete unpublished-download copyright notice",
+    "align public version metadata; accounting behavior, dependencies and license unchanged"
   ],
   "candidate_parent_commit": null,
   "source_origin": "clean snapshot; independent public Git root; exact file hashes below",

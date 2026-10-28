@@ -1,6 +1,6 @@
 # GPL 候选版本与两种构建
 
-候选版本 **0.3.0-preview.20261028.5**。作者 Soren；自有内容采用 GPL-2.0-only，见 [COPYRIGHT.txt](../COPYRIGHT.txt) 和完整 [LICENSE.txt](../LICENSE.txt)。账务算法沿用已验收实现；本补丁仅修正版权文件的公开领取状态，并同步版本标识；保留已验证Fava展示、依赖、账务算法与许可条款。
+候选版本 **0.3.0-preview.20261028.6**。作者 Soren；自有内容采用 GPL-2.0-only，见 [COPYRIGHT.txt](../COPYRIGHT.txt) 和完整 [LICENSE.txt](../LICENSE.txt)。账务算法沿用已验收实现；本版改善中文首页和安装说明，加入经审阅的原生Fava虚构截图；打包检查仅增加该JPEG的固定哈希审阅路径，RED省略图片。保留依赖、账务算法与许可条款。
 
 ## 状态与官方入口
 
@@ -14,10 +14,10 @@
 
 | 构建 | 内容 | 差异 |
 | --- | --- | --- |
-| github-full | 完整源码候选 ZIP | 保留 .github/workflows/verify.yml 和 .gitignore；ZIP 本身不含 .git 历史 |
-| redskill | RED Skill 平台格式候选 ZIP | 显式排除上述两项；同步 release-files.json 与 distribution.json |
+| github-full | 完整源码候选 ZIP | 保留CI/Git辅助文件及已审阅Fava截图；ZIP本身不含.git历史 |
+| redskill | RED Skill 平台格式候选 ZIP | 显式省略CI/Git辅助文件与JPEG截图；同步文件清单和图片审阅元数据，README保留公开原图链接 |
 
-共同文件中的实际记账实现、文档和许可相同，只有构建元数据和文件清单不同。两包哈希不同，使用包旁的 SHA256SUMS 和版本来源映射核对。
+共同文件中的实际记账实现、文档和许可相同，另有图片文件取舍，构建元数据与文件清单也不同。两包哈希不同，使用包旁的 SHA256SUMS 和版本来源映射核对。
 
 官方上传器 @xhs/skillhub-upload 0.1.1 的已核实规则为根 SKILL.md、单文件10 MiB、总30 MiB及后缀白名单；本地打包器在生成前检查所有文件，遇不支持文件直接失败，避免ZIP上传时静默丢弃。规则来源：[官方上传说明](https://redskill.xiaohongshu.net/uploader.md)。本轮没有安装/运行上传器，不声称平台真上传或运行通过。
 
@@ -31,7 +31,7 @@
   --variant redskill --output "/absolute/path/outside-git/ledger-redskill-review.zip"
 ```
 
-完整包可构建 github-full 或 redskill；RED包只可重建 redskill，不能凭空恢复已省略的CI/Git辅助文件。输出旁的.manifest.json记录包与内部文件哈希。两包带完整自有源码、测试、示例生成器、依赖声明和构建脚本，未捆绑wheel、venv或第三方二进制。
+完整包可构建 github-full 或 redskill；RED包只可重建 redskill，不能凭空恢复已省略的CI/Git辅助文件和截图。输出旁的.manifest.json记录包与内部文件哈希。两包带完整自有源码、测试、示例生成器、依赖声明和构建脚本，未捆绑wheel、venv或第三方二进制。
 
 acceptance_receipt.py属于需要Git历史的维护者入口，不是下载ZIP的安装命令。普通使用者按README运行doctor、first_run、demo；maintain check在无.git时跳过历史扫描。
 

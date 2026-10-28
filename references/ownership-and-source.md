@@ -12,7 +12,7 @@
 
 ## 分发源码边界
 
-两包包含自有Python源码、测试、JSON示例配置、示例生成器、requirements和本地打包脚本；没有隐藏的自有二进制构建步骤。RED包只省略Git/CI辅助文件，不省略记账实现。下载ZIP不带Git历史，但不因此缺少当前版本的自有源码。
+两包包含自有Python源码、测试、JSON示例配置、示例生成器、requirements和本地打包脚本；没有隐藏的自有二进制构建步骤。完整包另有经审阅的虚构Fava截图，RED包省略该JPEG及Git/CI辅助文件，不省略记账实现。下载ZIP不带Git历史，但不因此缺少当前版本的自有源码。
 
 当前没有分发依赖二进制。安装时由pip解析依赖；实际依赖树及其通知见dependency-license-snapshot.json、third-party-notice-index.json。这不是将依赖许可义务转嫁或自动免除的结论。未来若发布wheel合集、可执行文件、容器或服务端组合，应对实际分发物重新核对源代码与许可义务。
 

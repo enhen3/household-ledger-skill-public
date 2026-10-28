@@ -32,16 +32,36 @@ def scan_text(text, deny=()):
     return sorted(set(findings))
 
 
+def scan_content(name, raw, manifest, deny=()):
+    """Only explicitly reviewed, hash-pinned JPEG documentation is non-text."""
+    reviewed = manifest.get("reviewed_images", {}).get(name)
+    if reviewed is not None:
+        if (not name.startswith("references/images/") or not name.endswith(".jpg")
+                or reviewed.get("format") != "JPEG" or reviewed.get("synthetic") is not True
+                or not raw.startswith(b"\xff\xd8\xff") or not raw.endswith(b"\xff\xd9")
+                or hashlib.sha256(raw).hexdigest() != reviewed.get("sha256")):
+            return ["unverified_documentation_image"]
+        return []
+    return scan_text(raw.decode("utf-8"), deny)
+
+
+def git_content(spec, root):
+    return subprocess.check_output(["git", "show", spec], cwd=root)
+
+
 def manifest_files(root=ROOT):
     manifest = json.loads((root / "release-files.json").read_text())
     paths = manifest["files"]
     if len(paths) != len(set(paths)) or paths != sorted(paths):
         raise ValueError("release allowlist must be unique and sorted")
+    if not set(manifest.get("reviewed_images", {})).issubset(paths):
+        raise ValueError("reviewed image must be allowlisted")
     return paths
 
 
 def check_files(root=ROOT, deny=()):
     allowed = manifest_files(root)
+    manifest = json.loads((root / "release-files.json").read_text())
     issues = []
     for relative in allowed:
         path = root / relative
@@ -51,7 +71,7 @@ def check_files(root=ROOT, deny=()):
             raise ValueError("symlink export refused")
         if not path.is_file() or path.stat().st_size > 250000:
             raise ValueError("missing or oversized allowed file: " + relative)
-        issues += [relative + ":" + item for item in scan_text(path.read_text(encoding="utf-8"), deny)]
+        issues += [relative + ":" + item for item in scan_content(relative, path.read_bytes(), manifest, deny)]
     if (root / ".git").exists():
         actual = run("git", "ls-files", "--cached", "--others", "--exclude-standard", "-z", cwd=root).split("\0")
         extra = sorted(set(filter(None, actual)) - set(allowed))
@@ -60,9 +80,10 @@ def check_files(root=ROOT, deny=()):
         # Also inspect the staged content: working-tree scans alone miss a
         # staged secret removed only from the working tree.
         staged = run("git", "ls-files", "-z", cwd=root).split("\0")
+        staged_manifest = json.loads(git_content(":release-files.json", root))
         for p in filter(None, staged):
-            content = run("git", "show", ":" + p, cwd=root)
-            issues += [p + ":staged:" + item for item in scan_text(content, deny)]
+            content = git_content(":" + p, root)
+            issues += [p + ":staged:" + item for item in scan_content(p, content, staged_manifest, deny)]
     if issues:
         raise ValueError("release privacy gate failed: " + "; ".join(issues))
     return allowed
@@ -93,11 +114,12 @@ def audit_history(root=ROOT, deny=()):
     commits = run("git", "rev-list", "--all", cwd=root).splitlines()
     for commit in commits:
         names = run("git", "ls-tree", "-r", "--name-only", commit, cwd=root).splitlines()
-        historical = json.loads(run("git", "show", f"{commit}:release-files.json", cwd=root))["files"]
+        manifest = json.loads(run("git", "show", f"{commit}:release-files.json", cwd=root))
+        historical = manifest["files"]
         for name in names:
             if name not in historical:
                 raise ValueError("history non-allowlisted file: " + commit[:12] + ":" + name)
-            findings = scan_text(run("git", "show", f"{commit}:{name}", cwd=root), deny)
+            findings = scan_content(name, git_content(f"{commit}:{name}", root), manifest, deny)
             if findings:
                 raise ValueError("history privacy finding: " + commit[:12] + ":" + name + ":" + ",".join(findings))
     return len(commits)
@@ -108,6 +130,7 @@ def build_review_package(output, root=ROOT, deny=()):
     import io
     output = safe_output(output)
     paths = check_files(root, deny)
+    manifest = json.loads((root / "release-files.json").read_text())
     buffer = io.BytesIO()
     with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for relative in paths:
@@ -120,7 +143,7 @@ def build_review_package(output, root=ROOT, deny=()):
         if archive.namelist() != paths:
             raise ValueError("review package differs from allowlist")
         for name in archive.namelist():
-            if scan_text(archive.read(name).decode("utf-8"), deny):
+            if scan_content(name, archive.read(name), manifest, deny):
                 raise ValueError("review package privacy finding: " + name)
     immutable_write(output, raw)
     metadata_path = root / "distribution.json"

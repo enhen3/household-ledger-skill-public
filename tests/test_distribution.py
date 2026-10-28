@@ -10,9 +10,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import build_distribution as dist
+import maintain
 
 
 class DistributionTests(unittest.TestCase):
+    def test_unreviewed_or_changed_image_is_rejected(self):
+        name = "references/images/example.jpg"
+        raw = b"\xff\xd8\xff" + b"synthetic-test-image" + b"\xff\xd9"
+        proof = {"reviewed_images": {name: {"sha256": hashlib.sha256(raw).hexdigest(), "format": "JPEG", "synthetic": True}}}
+        self.assertEqual(maintain.scan_content(name, raw, proof), [])
+        self.assertIn("unverified_documentation_image", maintain.scan_content(name, raw + b"changed", proof))
+        with self.assertRaises(UnicodeDecodeError):
+            maintain.scan_content(name, raw, {})
+
+    def test_image_review_cannot_hide_text_or_non_documentation_files(self):
+        raw = b"synthetic secret text"
+        for name in ("scripts/hidden.jpg", "references/images/example.jpg"):
+            proof = {"reviewed_images": {name: {"sha256": hashlib.sha256(raw).hexdigest(), "format": "JPEG", "synthetic": True}}}
+            self.assertIn("unverified_documentation_image", maintain.scan_content(name, raw, proof))
+
     def test_variant_manifest_and_repacking_are_consistent(self):
         metadata = json.loads((ROOT / "distribution.json").read_text())
         variants = ["redskill"]

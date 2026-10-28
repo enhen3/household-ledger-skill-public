@@ -17,6 +17,9 @@
     "references/fava-dependency-license-snapshot.json",
     "references/first-use.md",
     "references/handoff.md",
+    "references/images/README.md",
+    "references/images/fava-income-statement.jpg",
+    "references/install.md",
     "references/maintenance.md",
     "references/ownership-and-source.md",
     "references/privacy.md",
@@ -116,5 +119,12 @@
     "tests/test_safety.py",
     "tests/test_visualization.py",
     "tests/test_workflow.py"
-  ]
+  ],
+  "reviewed_images": {
+    "references/images/fava-income-statement.jpg": {
+      "sha256": "5a39c38ed7ab77e4f12a34e997b5d5d2834f1f9c8acc8706e1469735eb79a3a7",
+      "format": "JPEG",
+      "synthetic": true
+    }
+  }
 }

@@ -11,7 +11,7 @@ import maintain
 
 ROOT = Path(__file__).resolve().parents[1]
 RED_SUFFIXES = frozenset(".md .txt .html .htm .css .js .py .java .cpp .c .h .php .sh .bat .ps1 .json .xml .sql .ini .cfg .log .db .sqlite .sqlite3 .mdb .accdb .sys".split())
-RED_EXCLUDED = frozenset({".github/workflows/verify.yml", ".gitignore"})
+RED_EXCLUDED = frozenset({".github/workflows/verify.yml", ".gitignore", "references/images/fava-income-statement.jpg"})
 MAX_FILE = 10 * 1024 * 1024
 MAX_TOTAL = 30 * 1024 * 1024
 
@@ -58,7 +58,11 @@ def build(root, variant, output):
         metadata = dict(metadata, build_kind=variant,
                         excluded_source_files=sorted(RED_EXCLUDED) if variant == "redskill" else [])
         (stage / "distribution.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n")
-        (stage / "release-files.json").write_text(json.dumps({"schema_version": 1, "files": included}, indent=2) + "\n")
+        release_manifest = json.loads((root / "release-files.json").read_text())
+        release_manifest["files"] = included
+        if "reviewed_images" in release_manifest:
+            release_manifest["reviewed_images"] = {name: proof for name, proof in release_manifest["reviewed_images"].items() if name in included}
+        (stage / "release-files.json").write_text(json.dumps(release_manifest, indent=2) + "\n")
         verify_core(stage)
         red = validate_redskill(stage, included) if variant == "redskill" else None
         package = maintain.build_review_package(Path(output), root=stage)

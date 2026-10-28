@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0-preview.20261028.6 (Chinese onboarding and native Fava example)
+
+- Lead README with user outcomes, a reviewed native Fava synthetic screenshot, a workflow diagram and a short install-to-first-result path. Preserve detailed installation/history evidence in references.
+- Pin the reviewed JPEG hash for worktree/staged/history/package validation; omit only the image from RED alongside existing Git/CI exclusions. Ledger behavior, dependencies and license terms are unchanged.
+
 ## 0.3.0-preview.20261028.5 (public download notice correction)
 
 - Replace the obsolete unpublished-download sentence in COPYRIGHT.txt with the official public repository URL.
